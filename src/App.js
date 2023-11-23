@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
-// import Gallery from "./components/Gallery";
-// import SearchBar from "./components/SearchBar";
+import Gallery from "./Components/Gallery/Gallery";
+import SearchBar from "./Components/SearchBar";
 
 function App() {
-  // let [search, setSearch] = useState("");
-  // let [message, setMessage] = useState("Search for Music!");
-  // let [data, setData] = useState([]);
+  const [search, setSearch] = useState("");
+  const [message, setMessage] = useState("Search for Music!");
+  const [data, setData] = useState([]);
 
-  return <div>Hello</div>;
+  return (
+    <div>
+      <Gallery />
+      {message}
+      <SearchBar />
+    </div>
+  );
 }
 
 export default App;
